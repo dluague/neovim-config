@@ -1,4 +1,5 @@
 vim.cmd("let g:netrw_liststyle = 3")
+vim.g.lazyvim_php_lsp = "intelephense"
 
 local opt = vim.opt -- for conciseness
 
@@ -14,7 +15,7 @@ opt.autoindent = true -- copy indent from current line when starting new one
 opt.showtabline = 0
 
 -- line wrapping
-opt.wrap = true -- disable line wrapping
+opt.wrap = false -- disable line wrapping
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
